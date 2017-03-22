@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.AddMSNController">
+   <children>
+      <ImageView fx:id="iv" fitHeight="700.0" fitWidth="1259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image></ImageView>
+      <JFXHamburger fx:id="ham" layoutX="1214.0" layoutY="22.0">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="0.95" saturation="-1.0" />
+         </effect></JFXHamburger>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutY="-1.0" prefHeight="701.0" prefWidth="64.0" />
+      <Label layoutX="193.0" layoutY="95.0" prefHeight="581.0" prefWidth="932.0" style="-fx-background-color: #666666; -fx-opacity: 0.4;" />
+      <Label layoutX="227.0" layoutY="12.0" prefHeight="71.0" prefWidth="408.0" text="Add Mission" textFill="BURLYWOOD">
+         <font>
+            <Font name="Telugu MN Bold" size="63.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="103.0" text="What type of work do you require?" textFill="LINEN">
+         <font>
+            <Font name="Telugu MN Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="flexbox" layoutX="263.0" layoutY="144.0" prefHeight="64.0" prefWidth="204.0" text="Flextime" textFill="IVORY" unCheckedColor="#141414">
+         <font>
+            <Font name="Tamil Sangam MN Bold" size="25.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="partbox" layoutX="445.0" layoutY="144.0" prefHeight="64.0" prefWidth="204.0" text="Parttime" textFill="IVORY" unCheckedColor="BLACK">
+         <font>
+            <Font name="Tamil Sangam MN Bold" size="25.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="228.0" layoutY="310.0" text="What is your project about?" textFill="LINEN">
+         <font>
+            <Font name="Telugu MN Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="titletf" focusColor="WHITE" layoutX="263.0" layoutY="353.0" promptText="Project name" style="-fx-focus-color: CORNSILK;" unFocusColor="IVORY">
+         <font>
+            <Font name="Telugu MN Bold" size="25.0" />
+         </font></JFXTextField>
+      <JFXComboBox fx:id="fieldcb" blendMode="LIGHTEN" layoutX="273.0" layoutY="421.0" prefHeight="53.0" prefWidth="264.0" promptText="Field" style="-fx-background-color: #FAF0E6;" />
+      <JFXDatePicker fx:id="startdate" defaultColor="BLACK" layoutX="270.0" layoutY="565.0" prefHeight="50.0" prefWidth="190.0" promptText="Start Date" style="-fx-background-color: #FAF0E6;" />
+      <JFXDatePicker fx:id="enddate" defaultColor="BLACK" layoutX="500.0" layoutY="565.0" prefHeight="50.0" prefWidth="190.0" promptText="End Date" style="-fx-background-color: #FAF0E6;" />
+      <Label layoutX="239.0" layoutY="502.0" prefHeight="33.0" prefWidth="204.0" text="The Price:" textFill="LINEN">
+         <font>
+            <Font name="Telugu MN Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="pricetf" focusColor="WHITE" layoutX="360.0" layoutY="495.0" maxWidth="269.0" minWidth="267.0" prefHeight="38.0" prefWidth="269.0" promptText="\$" unFocusColor="WHITE">
+         <font>
+            <Font name="Telugu MN Bold" size="25.0" />
+         </font></JFXTextField>
+      <Label layoutX="739.0" layoutY="103.0" text="Tell us more about your project" textFill="LINEN">
+         <font>
+            <Font name="Telugu MN Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="skillscb" cache="true" layoutX="739.0" layoutY="144.0" prefHeight="53.0" prefWidth="380.0" promptText="Required skills" />
+      <Label fx:id="skills" layoutX="739.0" layoutY="217.0" prefHeight="48.0" prefWidth="326.0" text="Label" />
+      <JFXButton fx:id="sk" layoutX="1086.0" layoutY="229.0" onAction="#skills" prefHeight="36.0" prefWidth="25.0" style="-fx-background-color: #696969;" text="+" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXTextArea fx:id="descriptiontf" layoutX="735.0" layoutY="304.0" maxWidth="389.0" minWidth="379.0" prefHeight="144.0" prefWidth="379.0" unFocusColor="LINEN" />
+      <JFXCheckBox fx:id="localbox" layoutX="265.0" layoutY="221.0" prefHeight="64.0" prefWidth="363.0" text="Check this if its a local" textFill="IVORY" unCheckedColor="#141414">
+         <font>
+            <Font name="Tamil Sangam MN Bold" size="25.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="AddBTN" layoutX="855.0" layoutY="617.0" onAction="#ADDMISSION" prefHeight="44.0" prefWidth="108.0" style="-fx-background-color: #696969;" text="Publish" textFill="BURLYWOOD">
+         <font>
+            <Font name="Bangla MN Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

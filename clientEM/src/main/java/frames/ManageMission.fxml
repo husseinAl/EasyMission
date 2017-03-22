@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690" prefWidth="1250" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.ManageMissionController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tablemission" blendMode="DARKEN" layoutX="241.0" layoutY="65.0" onMouseClicked="#tabclick" prefHeight="546.0" prefWidth="936.0" style="-fx-background-color: #A8A8A8;">
+        <columns>
+          <TableColumn fx:id="titleC" prefWidth="97.0" text="Title" />
+          <TableColumn fx:id="descriptionC" prefWidth="107.0" text="Description" />
+            <TableColumn fx:id="fieldC" prefWidth="65.0" text="Field" />
+            <TableColumn fx:id="startC" prefWidth="105.0" text="Start Date" />
+            <TableColumn fx:id="endC" prefWidth="107.0" text="End Date" />
+            <TableColumn fx:id="missiontypeC" minWidth="9.0" prefWidth="71.0" text="Type" />
+            <TableColumn fx:id="stateC" prefWidth="63.0" text="State" />
+            <TableColumn fx:id="localC" prefWidth="65.0" text="Local" />
+            <TableColumn fx:id="priceC" prefWidth="69.0" text="Price" />
+            <TableColumn fx:id="skillsC" prefWidth="186.0" text="Skills" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="updatemission" layoutX="1083.0" layoutY="641.0" onAction="#UpdateMission" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: #696969;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Malayalam MN Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXHamburger fx:id="ham" layoutX="1209.0" layoutY="28.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="10.0" layoutY="4.0" prefHeight="774.0" prefWidth="284.0" />
+      <JFXButton fx:id="btassign" layoutX="971.0" layoutY="641.0" onAction="#assign" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: #696969;" text="Assign" textFill="WHITE">
+         <font>
+            <Font name="Malayalam MN Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

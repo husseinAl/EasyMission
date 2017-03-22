@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.workerMissionsController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1546.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fd1.jpg" />
+         </image>
+      </ImageView>
+     
+      <Text fill="#666666" layoutX="85.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My missions" wrappingWidth="404.13671875">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="-7.0" layoutY="45.0" prefHeight="232.0" prefWidth="577.0" styleClass="-fx-op">
+         <children>
+            <Label layoutX="10.0" layoutY="2.0" prefHeight="645.0" prefWidth="1252.0" style="-fx-background-color: #666666; -fx-opacity: 0.3; -fx-background-radius: 40;" />
+            <AnchorPane fx:id="form" layoutX="707.0" layoutY="60.0" prefHeight="584.0" prefWidth="513.0">
+               <children>
+                  <Label fx:id="affich" alignment="TOP_CENTER" layoutX="1.0" layoutY="3.0" prefHeight="581.0" prefWidth="509.0" style="-fx-background-color: #666666; -fx-opacity: 0.5;" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="affichtt" layoutX="54.0" layoutY="38.0" prefHeight="44.0" prefWidth="413.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="affichdesc" layoutX="44.0" layoutY="90.0" prefHeight="111.0" prefWidth="413.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="applications" layoutX="190.0" layoutY="9.0" onAction="#applications" prefHeight="50.0" prefWidth="150.0" text="Applications" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="assignments" layoutX="40.0" layoutY="9.0" onAction="#assignments" prefHeight="50.0" prefWidth="150.0" text="Assignments" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="history" layoutX="340.0" layoutY="9.0" onAction="#history" prefHeight="50.0" prefWidth="150.0" text="History" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="suggestions" layoutX="490.0" layoutY="9.0" onAction="#suggestions" prefHeight="50.0" prefWidth="150.0" text="Suggestions" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tab" layoutX="20.0" layoutY="103.0" onMouseClicked="#tabclick" prefHeight="585.0" prefWidth="665.0" stylesheets="@../css/table.css">
+        <columns>
+          <TableColumn fx:id="col1" editable="false" prefWidth="175.0" text="Title" />
+            <TableColumn fx:id="col2" editable="false" prefWidth="433.0" text="Description" />
+            <TableColumn fx:id="col3" prefWidth="75.0" text="Required Skills" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXHamburger fx:id="ham" layoutX="1217.0" layoutY="10.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="-3.0" layoutY="-9.0" prefHeight="707.0" prefWidth="30.0" />
+   </children>
+</AnchorPane>

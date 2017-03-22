@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690" prefWidth="1250" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.frameE4Controller">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="GREY" layoutX="110.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-opacity: 1;" text="Fill your information please">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1032.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+         <image>
+            <Image url="@../img/Easy%20Mission.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="fn" layoutX="284.0" layoutY="286.0" prefHeight="44.0" prefWidth="313.0" promptText="First name" style="-fx-opacity: 1;" />
+      <TextField fx:id="ln" layoutX="284.0" layoutY="356.0" prefHeight="44.0" prefWidth="313.0" promptText="Last Name" style="-fx-opacity: 1;" />
+      <TextField fx:id="email" layoutX="284.0" layoutY="428.0" prefHeight="44.0" prefWidth="313.0" promptText="Email" style="-fx-opacity: 1;" />
+      <DatePicker fx:id="date" layoutX="756.0" layoutY="445.0" prefHeight="44.0" prefWidth="313.0" promptText="Date of birth" style="-fx-opacity: 1;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <PasswordField fx:id="rpwd" layoutX="756.0" layoutY="596.0" prefHeight="44.0" prefWidth="313.0" promptText="Retype Password" style="-fx-opacity: 1;" />
+      <PasswordField fx:id="pwd" layoutX="756.0" layoutY="517.0" prefHeight="44.0" prefWidth="313.0" promptText="Password" style="-fx-opacity: 1;" />
+      <ComboBox fx:id="coutry" layoutX="284.0" layoutY="507.0" prefHeight="44.0" prefWidth="313.0" promptText="Country" style="-fx-opacity: 1;" />
+      <Button fx:id="add" defaultButton="true" layoutX="912.0" layoutY="661.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.47" prefHeight="31.0" prefWidth="159.0" style="-fx-opacity: 1;" text="Register" textFill="WHITE" />
+      <ComboBox fx:id="gender" layoutX="756.0" layoutY="375.0" prefHeight="44.0" prefWidth="313.0" promptText="Gender" style="-fx-opacity: 1;" />
+      <ComboBox fx:id="field" layoutX="284.0" layoutY="588.0" prefHeight="44.0" prefWidth="313.0" promptText="Field" style="-fx-opacity: 1;" />
+      <TextField fx:id="login" layoutX="756.0" layoutY="286.0" prefHeight="44.0" prefWidth="313.0" promptText="Login" style="-fx-opacity: 1;" />
+      <Button fx:id="back" layoutX="-159.0" layoutY="-122.0" mnemonicParsing="false" onAction="#handle2ButtonAction" prefHeight="336.0" prefWidth="408.0" rotate="180.0" scaleX="0.15" scaleY="0.15" style="-fx-opacity: 1;" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../img/arrow.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

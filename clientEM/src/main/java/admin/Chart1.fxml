@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.Chart1Controller">
+   <children>
+      <SplitPane dividerPositions="0.4882943143812709" layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="imv1" fitHeight="228.0" fitWidth="289.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" scaleY="2.5">
+                     <image>
+                        <Image url="@../img/b1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="71.0" layoutY="14.0" text="Pie Chart Users" textFill="#9a9494">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <PieChart fx:id="PieChartUsers" layoutX="22.0" layoutY="30.0" prefHeight="305.0" prefWidth="258.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="imv2" fitHeight="407.0" fitWidth="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" scaleY="2.5">
+                     <image>
+                        <Image url="@../img/b1.jpg" />
+                     </image>
+                  </ImageView>
+                  <BarChart fx:id="barchartskills" layoutX="6.0" layoutY="-1.0" prefHeight="400.0" prefWidth="296.0" title="Skills per Workers">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

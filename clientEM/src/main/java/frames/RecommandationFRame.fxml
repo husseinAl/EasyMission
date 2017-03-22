@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.RecommandationController">
+   <children>
+      <ImageView fx:id="iv" fitHeight="744.0" fitWidth="1334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image></ImageView>
+      <JFXHamburger fx:id="ham" layoutX="1209.0" layoutY="38.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect></JFXHamburger>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutY="-6.0" prefHeight="774.0" prefWidth="284.0" />
+      <Label layoutX="234.0" layoutY="68.0" prefHeight="625.0" prefWidth="1016.0" style="-fx-background-color: #666666; -fx-opacity: 0.3;" text="Label" />
+      <Text fx:id="fn" fill="WHITE" layoutX="256.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="ln" fill="WHITE" layoutX="256.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="mail" fill="WHITE" layoutX="257.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="country" fill="WHITE" layoutX="257.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="field" fill="WHITE" layoutX="256.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Field :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="895.0" layoutY="-209.0" mnemonicParsing="false" onAction="#exit" prefHeight="514.0" prefWidth="517.0" scaleX="0.08" scaleY="0.08" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../img/icon.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <ImageView fx:id="ppic" fitHeight="150.0" fitWidth="200.0" layoutX="284.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="bdate" fill="WHITE" layoutX="256.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BirthDate  :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="bank" fill="WHITE" layoutX="256.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank Account :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="552.0" layoutY="345.0" rotate="90.0" scaleX="2.5" startX="-100.0" stroke="GREY" translateX="100.0" translateY="90.0" />
+      <TableView fx:id="tabskill" layoutX="971.0" layoutY="310.0" prefHeight="200.0" prefWidth="250.0">
+        <columns>
+          <TableColumn fx:id="skil" prefWidth="249.0" text="Skill list" />
+        </columns>
+      </TableView>
+      <Text fx:id="number" fill="WHITE" layoutX="257.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="desc" layoutX="668.0" layoutY="310.0" prefHeight="200.0" prefWidth="270.0" />
+      <TableView fx:id="rcd" layoutX="668.0" layoutY="519.0" prefHeight="160.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="txt" prefWidth="355.0" text="Recommandation" />
+          <TableColumn fx:id="user" prefWidth="158.0" text="Recommander" />
+        </columns>
+      </TableView>
+      <Text fx:id="number1" fill="WHITE" layoutX="718.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="sk" layoutX="785.0" layoutY="100.0" opacity="0.6" prefHeight="41.0" prefWidth="297.0" promptText="Workers List" />
+      <Button fx:id="show" layoutX="1121.0" layoutY="105.0" mnemonicParsing="false" onAction="#show" style="-fx-background-color: white;" text="Show Profile" />
+      <TextField fx:id="txtrcd" layoutX="785.0" layoutY="167.0" prefHeight="41.0" prefWidth="297.0" promptText="Type A Recommandation" />
+      <Button fx:id="add" layoutX="1111.0" layoutY="172.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: white;" text="Add Recommandation" />
+      <JFXSlider fx:id="rvalue" blockIncrement="1.0" layoutX="942.0" layoutY="233.0" max="5.0" value="3.0">
+         <effect>
+            <ColorAdjust brightness="-0.12" contrast="0.8" hue="0.25" />
+         </effect>
+      </JFXSlider>
+      <Text fill="WHITE" layoutX="776.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate Worker">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="rate" layoutX="1121.0" layoutY="227.0" mnemonicParsing="false" onAction="#rate" style="-fx-background-color: white;" text="Rate" />
+      <Text fx:id="rrr" fill="WHITE" layoutX="257.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

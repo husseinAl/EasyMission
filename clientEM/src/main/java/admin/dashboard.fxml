@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.dashboardController">
+   <children>
+      <ImageView fitHeight="468.0" fitWidth="816.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="296.0" layoutY="1.0" prefHeight="52.0" prefWidth="254.0" text="Dashboard" textFill="#3d3d40">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="72.0" onMouseClicked="#handle" prefHeight="364.0" prefWidth="149.0" stylesheets="@../list.css" />
+      <VBox fx:id="vbox" layoutX="167.0" layoutY="67.0" prefHeight="385.0" prefWidth="639.0">
+         <children>
+            <ImageView fitHeight="381.0" fitWidth="644.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/admin.jpg" />
+               </image>
+            </ImageView>
+         </children></VBox>
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="571.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Easy%20Mission.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

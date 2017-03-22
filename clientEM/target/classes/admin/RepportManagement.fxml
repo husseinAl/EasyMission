@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.RepportManagementController">
+   <children>
+      <ImageView fitHeight="462.0" fitWidth="914.0" layoutX="-27.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.5">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labeladmin" layoutX="174.0" layoutY="-3.0" text="Administration Espace" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="iv1" fitHeight="47.0" fitWidth="115.0" layoutX="734.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Easy%20Mission.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelreports" layoutX="14.0" layoutY="32.0" text="Traited Reports List" textFill="#aea7a7">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablerepports" layoutX="23.0" layoutY="68.0" prefHeight="223.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="columnobject" prefWidth="99.0" text="Object" />
+          <TableColumn fx:id="columntext" prefWidth="221.0" text="text" />
+            <TableColumn fx:id="columnstate" prefWidth="53.0" text="State" />
+            <TableColumn fx:id="columnreporter" prefWidth="121.0" text="Reporter Full Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnaccept" layoutX="714.0" layoutY="110.0" mnemonicParsing="false" onAction="#accept" text="Accept">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Label layoutX="21.0" layoutY="354.0" text="untraited Reports List " textFill="#b2aeae">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btndecline" layoutX="712.0" layoutY="195.0" mnemonicParsing="false" onAction="#decline" prefHeight="65.0" prefWidth="118.0" text="Decline">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableuntraitedreports" layoutX="21.0" layoutY="396.0" prefHeight="270.0" prefWidth="672.0">
+        <columns>
+          <TableColumn fx:id="tobject" prefWidth="109.0" text="Object" />
+          <TableColumn fx:id="ttest" prefWidth="238.0000762939453" text="Text" />
+            <TableColumn fx:id="tstate" prefWidth="86.00006103515625" text="State" />
+            <TableColumn fx:id="treporter" prefWidth="134.0" text="Reporter Full Name" />
+            <TableColumn fx:id="colmissionid" prefWidth="102.00006103515625" text="id mission" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnrefresh" layoutX="1.0" layoutY="-43.0" mnemonicParsing="false" onAction="#refresh" prefHeight="123.0" prefWidth="127.0" scaleX="0.08" scaleY="0.08" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/git/pdev/clientEM/src/main/java/img/refresh.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnretour" layoutX="-285.0" layoutY="-262.0" mnemonicParsing="false" onAction="#retour" prefHeight="567.0" prefWidth="614.0" scaleX="0.06" scaleY="0.06" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/git/pdev/clientEM/src/main/java/img/retour.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnsendmail" layoutX="714.0" layoutY="288.0" mnemonicParsing="false" onAction="#sendmail" prefHeight="55.0" prefWidth="126.0" text="Send Mail">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="45.0" layoutY="307.0" prefHeight="39.0" prefWidth="196.0" text="Mail of the reporter">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfmail" layoutX="268.0" layoutY="314.0" prefHeight="25.0" prefWidth="191.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.addmissionController">
+   <children>
+      <ImageView fitHeight="703.0" fitWidth="1333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#fffbfb" layoutX="159.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Mission" wrappingWidth="404.13671875">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <HBox layoutX="6.0" layoutY="124.0" prefHeight="646.0" prefWidth="1367.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="683.5">
+               <children>
+                  <Text fill="#fcf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="What type of work do you require ?" textAlignment="CENTER" wrappingWidth="614.13671875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="684.0">
+                     <children>
+                        <CheckBox fx:id="partbox" mnemonicParsing="false" prefHeight="97.0" prefWidth="171.0" text="PartTime" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="flexbox" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="95.0" prefWidth="150.0" text="FlexTime" textFill="#fffefe">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="17.0" prefWidth="684.0" />
+                  <Text fill="#fcf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="What is your project about?" textAlignment="CENTER" wrappingWidth="614.13671875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="17.0" prefWidth="684.0" />
+                  <TextField fx:id="titletf" alignment="TOP_LEFT" maxWidth="-Infinity" prefHeight="43.0" prefWidth="392.0" promptText="Project name" />
+                  <Label prefHeight="17.0" prefWidth="684.0" />
+                  <ComboBox fx:id="fieldcb" prefHeight="43.0" prefWidth="392.0" promptText="Field" />
+                  <Label prefHeight="39.0" prefWidth="684.0" />
+                  <Text fill="#fcf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="                When ? " wrappingWidth="614.13671875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="17.0" prefWidth="684.0" />
+                  <HBox alignment="TOP_CENTER" prefHeight="54.0" prefWidth="684.0">
+                     <children>
+                        <DatePicker fx:id="startdate" prefHeight="43.0" prefWidth="174.0" promptText="Start Date" />
+                        <Label prefHeight="47.0" prefWidth="46.0" />
+                        <DatePicker fx:id="enddate" prefHeight="43.0" prefWidth="174.0" promptText="End date" />
+                     </children>
+                  </HBox>
+                  <Label prefHeight="37.0" prefWidth="684.0" />
+                  <Text fill="#fcf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="               The price  :" wrappingWidth="614.13671875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="17.0" prefWidth="684.0" />
+                  <TextField fx:id="pricetf" alignment="TOP_LEFT" maxWidth="-Infinity" prefHeight="43.0" prefWidth="392.0" promptText="price $" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="465.0" prefWidth="615.0">
+               <children>
+                  <Text fill="#fcf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Tell us more about your project" textAlignment="CENTER" wrappingWidth="614.13671875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="17.0" prefWidth="684.0" />
+                  <ComboBox fx:id="skillscb" prefHeight="43.0" prefWidth="392.0" promptText="Required skils" />
+                  <Label prefHeight="29.0" prefWidth="684.0" />
+                  <TextField fx:id="descriptiontf" alignment="TOP_LEFT" maxWidth="-Infinity" prefHeight="173.0" prefWidth="392.0" promptText="Project Description..." />
+                  <Label prefHeight="43.0" prefWidth="684.0" />
+                  <HBox prefHeight="40.0" prefWidth="684.0">
+                     <children>
+                        <Label prefHeight="29.0" prefWidth="147.0" />
+                        <Text fill="#0a2d3c" strokeType="OUTSIDE" strokeWidth="0.0" text="Check this if it is a local work" wrappingWidth="262.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <CheckBox fx:id="localbox" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="0.0" textFill="#fffefe">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="113.0" prefWidth="684.0" />
+                  <Button fx:id="AddBTN" mnemonicParsing="false" onAction="#ADDMISSION" prefHeight="51.0" prefWidth="182.0" text="Publish" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="sk" layoutX="593.0" layoutY="25.0" mnemonicParsing="false" onAction="#skills" text="Button" />
+      <Label fx:id="skills" layoutX="762.0" layoutY="30.0" />
+   </children>
+</AnchorPane>

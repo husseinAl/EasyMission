@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1086.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.addreclamationController">
+   <children>
+      <ImageView fitHeight="698.0" fitWidth="1086.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/b1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="342.0" layoutY="17.0" text="Add New Reclamation" textFill="#68d1e1">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="110.0" text="Object" textFill="#f8f7f7">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfobject" layoutX="158.0" layoutY="107.0" prefHeight="51.0" prefWidth="245.0" promptText="Object of reclamation">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Label layoutX="36.0" layoutY="213.0" text="Text" textFill="#fffdfd">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="tftext" layoutX="155.0" layoutY="211.0" prefHeight="198.0" prefWidth="328.0" promptText="Text of your reclamation">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <Button fx:id="btnsend" layoutX="291.0" layoutY="509.0" mnemonicParsing="false" onAction="#sendreclamation" prefHeight="73.0" prefWidth="209.0" text="Send ">
+         <font>
+            <Font name="System Italic" size="41.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tablemissionsreport" layoutX="640.0" layoutY="161.0" prefHeight="354.0" prefWidth="401.0">
+        <columns>
+          <TableColumn fx:id="coltitle" prefWidth="75.0" text="title" />
+            <TableColumn fx:id="coltype" prefWidth="73.0" text="type" />
+          <TableColumn fx:id="coldescription" prefWidth="252.0" text="description" />
+        </columns>
+      </TableView>
+      <Label layoutX="614.0" layoutY="90.0" text="Select the mission that you would like to report " textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
