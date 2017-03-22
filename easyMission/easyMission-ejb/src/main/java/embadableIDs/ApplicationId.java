@@ -13,6 +13,7 @@ public class ApplicationId implements Serializable {
 
 	private int idApplicantPK;
 	private int idMissionPK;
+	private int raouf ;
 	private static final long serialVersionUID = 1L;
 
 	public ApplicationId() {
